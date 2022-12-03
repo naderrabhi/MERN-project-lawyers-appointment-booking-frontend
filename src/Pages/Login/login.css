@@ -1,0 +1,23 @@
+.login--page {
+    min-height: 100vh;
+    background: url('../../assets/images/sign.jpeg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    font-family: var(--font-base);
+    color: var(--color-white);
+}
+
+.login--page h3 {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+}
+
+.login--page hr {
+    font-size: 4px;
+    color: red;
+}
