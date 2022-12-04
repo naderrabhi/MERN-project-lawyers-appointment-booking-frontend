@@ -9,10 +9,10 @@
   font-weight: 700;
   color: var(--color-white);
   background: var(--color-orange);
-  height: 70px;
-  line-height: 70px;
+  height: 65px;
+  line-height: 65px;
   text-align: center;
-  padding: 0 50px;
+  padding: 0 30px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -24,7 +24,27 @@
   transition: 0.5s ease;
   cursor: pointer;
 }
-  
+
+.login--barre {
+  width: 80%;
+  height: 3px;
+  position: relative;
+  background: var(--color-black);
+  border: solid 1px var(--color-black);
+}
+
+.input--custom {
+  height: 40px;
+  width: 360px;
+  border: solid 3px black;
+  border-radius: 30px;
+  padding: 0 1rem;
+}
+
+.input--custom:focus {
+  outline: solid 1px black;
+}
+
 @media screen and (max-width: 850px) {
   .section__padding {
       padding: 4rem;
