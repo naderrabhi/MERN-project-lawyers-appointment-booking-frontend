@@ -6,15 +6,15 @@ import {BsShieldFillCheck,BsQuestionLg} from 'react-icons/bs'
 const Links = () => {
   return (
     <>
-        <Link to='/login'>
+        <Link to='/connecter'>
             <p>Se connecter</p>
             <FaUserAlt />
         </Link>
-        <Link to='/login'>
+        <Link to='/connecter'>
             <p>Accès professionnel</p>
             <BsShieldFillCheck />
         </Link>
-        <Link to='/login'>
+        <Link to='/connecter'>
             <p>Besoin d'aide?</p>
             <BsQuestionLg />
         </Link>

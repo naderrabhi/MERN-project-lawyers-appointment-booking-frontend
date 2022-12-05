@@ -69,3 +69,17 @@
     color: var(--color-black);
     font-size: 1.8rem;
 }
+
+@media screen and (max-width: 450px) {
+    .login--page h3 {
+        letter-spacing: 0;
+    }
+    .login--page_register {
+        padding: 0.5rem 2rem;
+        gap: 1rem;
+        text-align: center;
+    }
+    .login--page_register button {
+        width: 270px !important;
+    }
+}

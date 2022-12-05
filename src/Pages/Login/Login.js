@@ -37,7 +37,7 @@ const Login = () => {
       </form>
       <div className="login--page_register">
         <p>Pas encore de compte chez nous?</p>
-        <Link to="/register">
+        <Link to="/enregistrer">
           <button className="btn--costum btn--costum_hover">
             creer un compte
           </button>
