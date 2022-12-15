@@ -77,22 +77,6 @@
     letter-spacing: 0.1rem;
 }
 
-.lawyerDetailsInfo--social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.lawyerDetailsInfo--social svg{
-    font-size: 1.8rem;
-}
-
-.lawyerDetailsInfo--social svg:hover{
-    transform: scale(1.1);
-    transition: 0.5s ease;
-}
-
 .lawyersDetailsBooking--text {
     background-color: var(--color-orange);
     width: 50%;
@@ -111,7 +95,7 @@
     font-weight: 500;
 }
 
-.lawyersDetailsBooking--text p:nth-child(2) {
+.lawyersDetailsBooking--text p {
     font-size: 1.8rem;
     font-weight: 500;
 }
@@ -164,6 +148,7 @@
         width: 100%;
     }
 }
+
 
 @media screen and (max-width:600px) {
     .lawyerDetailsInfo--img img {

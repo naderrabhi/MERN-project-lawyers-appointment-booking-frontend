@@ -45,6 +45,52 @@
   outline: solid 1px black;
 }
 
+.form--custom {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form--div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form--label {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-variant:small-caps;
+    color: var(--color-black);
+}
+
+.page--relative {
+    opacity: 1;
+    position: relative;
+}
+
+/*Social Icon*/
+
+.lawyer--social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.lawyer--social svg{
+  font-size: 1.8rem;
+}
+
+.lawyer--social svg:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+p.social--p {
+  font-size: 1.1rem;
+}
+
 @media screen and (max-width: 850px) {
   .section__padding {
       padding: 4rem;

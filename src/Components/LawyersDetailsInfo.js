@@ -1,20 +1,24 @@
 import React from 'react'
-import {FaFacebook,FaTwitterSquare,FaInstagramSquare} from 'react-icons/fa'
+import {FaFacebook,FaLinkedin,FaInstagramSquare} from 'react-icons/fa'
 
-const LawyersDetailsInfo = () => {
+const LawyersDetailsInfo = ({Profile}) => {
   return (
     <div className='lawyerDetailsInfo'>
         <div className='lawyerDetailsInfo--img'>
-            <img src="/test.jpg" alt="" />
-            <p>FirstName LastName</p>
-            <p>Specialty Specialty</p>
+            <img src={Profile.image} alt="" />
+            <p>{Profile.name}</p>
+            <p>{Profile.specialty}</p>
         </div>
         <div className='lawyerDetailsInfo--bio'>
-            <p>Bio Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic accusamus </p>
-            <div className="lawyerDetailsInfo--social">
-                <a href="/"><FaFacebook /></a>
-                <a href="/"><FaTwitterSquare /></a>
-                <a href="/"><FaInstagramSquare /></a>
+          {Profile.bio && <p>Bio : {Profile.bio}</p>}
+          {Profile.address && <p>Adresse : {Profile.address}</p>}
+          {Profile.lawyerID && <p>E-mail : {Profile.lawyerID.email}</p>}
+          {Profile.phone && <p>Téléphone : {Profile.phone}</p>}
+          {Profile.price && <p>Prix de consultation : {Profile.price}</p>}
+            <div className="lawyer--social">
+              {Profile.facebook && <a href={Profile.facebook}><FaFacebook /></a> }
+              {Profile.linkedin && <a href={Profile.linkedin}><FaLinkedin /></a> }
+              {Profile.instagram && <a href={Profile.instagram}><FaInstagramSquare /></a> }
             </div>
         </div>
     </div>

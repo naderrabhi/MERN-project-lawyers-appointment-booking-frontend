@@ -1,16 +1,17 @@
 import React from 'react'
+
 import About from '../About/About'
 import Footer from '../Footer/Footer'
 import Search from '../Search/Search'
 import WebSiteExplain from '../WebSiteExplain/WebSiteExplain'
 import Welcome from '../Welcome/Welcome'
 
-const Home = () => {
+const Home = ({setSerchInput}) => {
   return (
     <>
-        <Welcome />
+        <Welcome setSerchInput={setSerchInput} />
         <WebSiteExplain />
-        <Search />
+        <Search setSerchInput={setSerchInput} />
         <About />
         <Footer />
     </>

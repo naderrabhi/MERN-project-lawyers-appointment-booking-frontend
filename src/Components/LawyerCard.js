@@ -1,16 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const LawyerCard = () => {
+const LawyerCard = ({profile}) => {
   return (
-    <div className="lawyer--card">
-        <img src="/test.jpg" alt="Avatar" className="image" />
+    <Link to={`/avocats/${profile.lawyerID._id}`}>
+      <div className="lawyer--card">
+        <img src={profile.image} alt="Avatar" className="image" />
         <div className="overlay">
             <div className="text">
-                <p>Hello World</p>
-                <p>Hello World</p>
+                <p>{profile.name}</p>
+                <p>{profile.specialty}</p>
             </div>
         </div>
-    </div>
+      </div>
+    </Link>
   )
 }
 
