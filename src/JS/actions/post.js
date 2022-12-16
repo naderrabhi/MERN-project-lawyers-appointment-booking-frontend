@@ -42,6 +42,7 @@ export const getPost = (lawyerID) => async (dispatch) => {
         },
       }
     );
+    console.log(response);
     dispatch({ type: GET_POST_SUCCESS, payload: response.data });
   } catch (error) {
     dispatch({ type: GET_POST_FAIL, payload: error });
